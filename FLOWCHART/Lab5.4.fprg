@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 01:13:48 PM"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMzsxMjozNzo0MyBQTTsyNzkw"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMzswMToxMzo0OCBQTTsxOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <declare name="i, max, min, count1, count2" type="Integer" array="False" size=""/>
+            <assign variable="count1" expression="0"/>
+            <assign variable="count2" expression="0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="max" expression="a[0]"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="max&lt;a[i]">
+                    <then>
+                        <assign variable="max" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="max" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="max=a[i]">
+                    <then>
+                        <assign variable="count1" expression="count1+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="count1" newline="True"/>
+            <assign variable="min" expression="a[0]"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="min&gt;a[i]">
+                    <then>
+                        <assign variable="min" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="min" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="min=a[i]">
+                    <then>
+                        <assign variable="count2" expression="count2+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="count2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

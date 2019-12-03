@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 12:37:38 PM"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMjswNDo0MDoxMCBQTTsyNzc4"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMzsxMjozNzozOCBQTTsxOzI5MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, n1, n2, n3, i" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="True" size="20"/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="1"/>
+            <output expression="n1" newline="True"/>
+            <output expression="n2" newline="True"/>
+            <for variable="i" start="2" end="19" direction="inc" step="1">
+                <assign variable="n3" expression="n1+n2"/>
+                <output expression="n3" newline="True"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

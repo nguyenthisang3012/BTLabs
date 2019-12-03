@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-02 04:21:21 PM"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMS0wNDswNDo0NDowNCBQTTsyNzg2"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMjswNDoyMToyMSBQTTsyOzI4ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kt(char)" type="String" array="False" size=""/>
+            <input variable="kt"/>
+            <if expression="65&lt;=kt&lt;=90||97&lt;=kt&lt;=122">
+                <then>
+                    <output expression="&quot;k&#237; t&#7921; b&#7841;n v&#7915;a nh&#7853;p l&#224; ch&#7919;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;k&#237; t&#7921; b&#7841;n v&#7915;a nh&#7853;p l&#224; k&#237; t&#7921; &#273;&#7863;c bi&#7879;t&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="48&lt;=kt&lt;=57">
+                <then>
+                    <output expression="&quot;k&#237; t&#7921; b&#7841;n v&#7915;a nh&#7853;p l&#224; s&#7889;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;k&#237; t&#7921; b&#7841;n v&#7915;a nh&#7853;p l&#224; k&#237; t&#7921; &#273;&#7863;c bi&#7879;t&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
